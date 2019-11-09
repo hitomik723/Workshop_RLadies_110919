@@ -35,6 +35,9 @@ library(fs)
 library(here)
 ```
 
+### How to use here fucntion
+http://jenrichmond.rbind.io/post/how-to-use-the-here-package/
+
 ```{r}
 here ()
 data <- read.csv(here("wtf-fix-paths-master", "data", "installed-packages.csv"))
