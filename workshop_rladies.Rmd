@@ -12,6 +12,31 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(tidyverse)
 ### to download courses from github
-#library(usethis)
+library(usethis)
 #use_course("rstd.io/wtf-explore-libraries")
+use_course("rstats-wtf/wtf-fix-paths", destdir = "/Users/kariyahitomi/Documents/workshop_workflow_rladies")
+```
+
+# Workshop materials
+## Materials for this workshop
+https://rstats-wtf.github.io/wtf-2019-rladies-seattle/
+
+## Materials for a two day workshop
+https://rstudio-conf-2020.github.io/what-they-forgot/
+
+### Pre-workshop set-up
+https://happygitwithr.com/workshops.html#pre-workshop-set-up
+
+### How you connect a R Project to Github
+https://cfss.uchicago.edu/setup/git-with-rstudio/
+
+```{r}
+library(fs)
+library(here)
+```
+
+```{r}
+here ()
+data <- read.csv(here("wtf-fix-paths-master", "data", "installed-packages.csv"))
+glimpse(data)
 ```
