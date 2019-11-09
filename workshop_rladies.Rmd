@@ -1,0 +1,17 @@
+---
+title: "workshop_rladies"
+author: "Hitomi Kariya"
+date: "11/9/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+### to download courses from github
+#library(usethis)
+#use_course("rstd.io/wtf-explore-libraries")
+```
